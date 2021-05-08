@@ -8,11 +8,16 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 
 @Service
-public class Consumer {
-    private final Logger log = LoggerFactory.getLogger(Consumer.class);
+public class ConsumerListenerService {
+    private final Logger log = LoggerFactory.getLogger(ConsumerListenerService.class);
 
     @KafkaListener(topics="users", groupId = "group_id")
     public void consume(String message) throws IOException {
         log.info("Message received is " + message);
+    }
+
+    @KafkaListener(topics = "users", groupId = "config_listener")
+    public void cosumerMessageUsingConfigConsumer(String message) {
+        log.info("Message recevied by configConsumer is {}", message);
     }
 }
