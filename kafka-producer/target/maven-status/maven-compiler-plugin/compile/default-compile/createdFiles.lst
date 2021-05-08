@@ -1,5 +1,0 @@
-com/ruminderhub/kafka/KafkaApplication.class
-com/ruminderhub/kafka/controller/KafkaController.class
-com/ruminderhub/kafka/service/Consumer.class
-com/ruminderhub/kafka/service/Producer.class
-com/ruminderhub/kafka/model/User.class
