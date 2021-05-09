@@ -35,10 +35,3 @@ curl -X POST -F 'message=test' http://localhost:9000/kafka/publish
 
 You can also use Postman to do this.
 In logs producer will send the message and consumer will consume this, printing in the logs.
-
-* Before running the project, run the Kafka and Zookeeper.
-* cd kafka-eureka
-* mvn spring-boot:run
-* From new terminal open project and go to kafka-producer folder.
-* Run mvn spring-boot: run command
-* 
